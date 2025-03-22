@@ -1,1 +1,41 @@
-// darkpixlz 2024
+// mobile.scss
+
+// 修正页面边距过窄
+.d-header {
+    padding: 0 1rem;
+  }
+  
+  // 修复标题太长换行重叠问题
+  .topic-title {
+    word-break: break-word;
+    font-size: 1.1em;
+  }
+  
+  // 修正菜单过宽
+  .mobile-view .slide-in {
+    max-width: 80vw;
+  }
+  
+  // 修复按钮大小不一致
+  .btn {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+  
+  // 让图片不要超出屏幕
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  // 修复通知菜单在手机上遮挡的问题
+  #quick-access-panel {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  // 强制底部的按钮居中显示
+  .composer-actions .btn {
+    margin: 0 auto;
+    display: block;
+  }
